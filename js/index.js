@@ -16,7 +16,7 @@ function fiboInLoop(numb){
 function fiboInArray(numb){
     let fiboArr = [1, 1];
     for(let i = 2; i < numb; i++){
-        fiboArr.push(fiboArr[i-1] + fiboArr[i-2])
+        fiboArr.push(fiboArr[i-1] + fiboArr[i-2]);
     }
     return fiboArr.pop();
 }
@@ -27,4 +27,5 @@ function fiboRecurcive(numb){
     }
     return fiboInLoop(numb - 1) + fiboInLoop(numb - 2);
 }
+
     
