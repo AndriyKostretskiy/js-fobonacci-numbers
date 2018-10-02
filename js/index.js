@@ -25,7 +25,7 @@ function fiboRecurcive(numb){
     if(numb <= 1) { 
        return numb;
     }
-    return fiboInLoop(numb - 1) + fiboInLoop(numb - 2);
+    return fiboRecurcive(numb - 1) + fiboRecurcive(numb - 2);
 }
 
     
