@@ -15,14 +15,14 @@ function fiboInLoopFor(numb){
 }
 
 function fiboInLoopWhile(numb){
-    let fiboNumb_1 = 1, fiboNumb_2 = 1, counter = 3;
+    let fiboNumb1 = 1, fiboNumb2 = 1, counter = 3;
     while(counter <= numb) {
-        let fiboNextNumb = fiboNumb_1 + fiboNumb_2;
-        fiboNumb_1 = fiboNumb_2;
-        fiboNumb_2 = fiboNextNumb;
+        let fiboNextNumb = fiboNumb1 + fiboNumb2;
+        fiboNumb1 = fiboNumb2;
+        fiboNumb2 = fiboNextNumb;
         counter++;
     }
-    return fiboNumb_2;
+    return fiboNumb2;
 }
 
 function fiboInArray(numb){
