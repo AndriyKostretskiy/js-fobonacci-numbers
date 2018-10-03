@@ -1,4 +1,4 @@
-const numb = parseFloat(prompt('Enter the number of Fibonacci'));
+const numb = parseInt(prompt('Enter the number of Fibonacci'));
 alert("LoopFor method: " + fiboInLoopFor(numb));
 alert("LoopWhile method: " + fiboInLoopWhile(numb));
 alert("Array method: " + fiboInArray(numb));
