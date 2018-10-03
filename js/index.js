@@ -2,7 +2,6 @@ const numb = parseFloat(prompt('Enter the number of Fibonacci'));
 alert("LoopFor method: " + fiboInLoopFor(numb));
 alert("LoopWhile method: " + fiboInLoopWhile(numb));
 alert("Array method: " + fiboInArray(numb));
-alert("ArrayReduce method: " + fiboInArrayReduce(numb));
 alert("Recurcive method: " + fiboRecurcive(numb));
 
 function fiboInLoopFor(numb){
@@ -33,16 +32,6 @@ function fiboInArray(numb){
         fiboArr.push(fiboArr[i-1] + fiboArr[i-2]);
     }
     return fiboArr.pop();
-}
-
-function fiboInArrayReduce(numb){
-    let fiboArr = [1, 1];
-    for(let i = 2; i < numb; i++){
-        let sum = fiboArr[0] + fiboArr[1];
-        fiboArr[0] = fiboArr[1];
-        fiboArr[1] = sum;
-    }
-    return fiboArr.reduce((accumulator,currentValue) => currentValue);
 }
 
 function fiboRecurcive(numb){
