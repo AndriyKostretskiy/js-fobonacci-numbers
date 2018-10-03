@@ -25,7 +25,6 @@ function fiboInLoopWhile(numb){
     return fiboNumb_2;
 }
 
-
 function fiboInArray(numb){
     let fiboArr = [1, 1];
     for(let i = 2; i < numb; i++){
