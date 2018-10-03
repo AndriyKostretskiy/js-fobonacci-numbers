@@ -5,13 +5,13 @@ alert("Array method: " + fiboInArray(numb));
 alert("Recurcive method: " + fiboRecurcive(numb));
 
 function fiboInLoopFor(numb){
-    let fiboNumb_1 = 1, fiboNumb_2 = 1;
+    let fiboNumb1 = 1, fiboNumb2 = 1;
     for(let i = 3; i <= numb; i++){
-        let fiboNextNumb = fiboNumb_1 + fiboNumb_2;
-        fiboNumb_1 = fiboNumb_2;
-        fiboNumb_2 = fiboNextNumb;
+        let fiboNextNumb = fiboNumb1 + fiboNumb2;
+        fiboNumb1 = fiboNumb2;
+        fiboNumb2 = fiboNextNumb;
     }
-    return fiboNumb_2;
+    return fiboNumb2;
 }
 
 function fiboInLoopWhile(numb){
