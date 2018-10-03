@@ -23,7 +23,7 @@ function fiboInLoopWhile(numb){
         fiboNumb_2 = fiboNextNumb;
         counter++;
     }
-  return fiboNumb_2;
+    return fiboNumb_2;
 }
 
 
