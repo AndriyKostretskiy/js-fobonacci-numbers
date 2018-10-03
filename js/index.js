@@ -46,8 +46,8 @@ function fiboInArrayReduce(numb){
 }
 
 function fiboRecurcive(numb){
-    if(numb <= 2) { 
-       return 1;
+    if(numb <= 1) { 
+       return numb;
     }
     return fiboRecurcive(numb - 1) + fiboRecurcive(numb - 2);
 }
