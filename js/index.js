@@ -18,8 +18,7 @@ function fiboInLoopWhile(numb){
     let fiboNumb1 = 1, fiboNumb2 = 1, counter = 3;
     while(counter <= numb) {
         let fiboNextNumb = fiboNumb1 + fiboNumb2;
-        fiboNumb1 = fiboNumb2;
-        fiboNumb2 = fiboNextNumb;
+        [fiboNumb1, fiboNumb2] = [fiboNumb2, fiboNextNumb];
         counter++;
     }
     return fiboNumb2;
